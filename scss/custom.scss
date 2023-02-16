@@ -1,0 +1,14 @@
+/* custom.scss */
+$primary: #a2d2ff;
+$secondary: #bde0fe;
+$success: #3e8d63;
+$info: #7854e4;
+$warning: #b8c924;
+$danger: #d62518;
+$light: #f8f9fa;
+$dark: #313f4c;
+
+$font-family-base: "Roboto", sans-serif;
+
+//IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";
