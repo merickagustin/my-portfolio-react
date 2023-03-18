@@ -1,9 +1,9 @@
-import "./App.css";
 import "./css/custom.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./css/style.css";
 
+import About from "./components/About.js";
 import Navbar from "./components/Navbar.js";
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
       <header className="App-header sticky-top">
         <Navbar />
       </header>
-      <section></section>
+      <section>
+        <About />
+      </section>
     </div>
   );
 }
