@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="navbar bg-primary navbar-expand-md fs-4">
+    <nav className="navbar bg-primary navbar-expand-lg fs-4">
       <div className="container-fluid fw-bold">
         <a className="navbar-brand" href="#">
           Merick Icy Agustin
