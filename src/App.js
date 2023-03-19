@@ -3,7 +3,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./css/style.css";
 
-import About from "./components/About.js";
+import Home from "./components/Home.js";
 import Navbar from "./components/Navbar.js";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
       </header>
       <section>
-        <About />
+        <Home />
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import MyPic from "../img/agustin.jpg";
-import classes from "../css/About.module.css";
+import classes from "../css/Home.module.css";
 
 const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
