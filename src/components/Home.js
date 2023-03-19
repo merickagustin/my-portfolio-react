@@ -4,10 +4,11 @@ import classes from "../css/Home.module.css";
 
 const startYear = new Date("03/01/2014").getFullYear();
 const curYear = new Date().getFullYear();
+
 function About() {
   return (
-    <div className="container">
-      <div className="about-container mt-4 d-flex flex-row gap-4">
+    <div>
+      <div className="about-container container mt-4 mb-4 d-lg-flex flex-row gap-4">
         <div className={classes["about-content"]}>
           <h1>About</h1>
           <p>
@@ -19,8 +20,12 @@ function About() {
             Computer Science.
           </p>
           <p>I'm currently exploring new techs in building web applications.</p>
+          <div className="about-links">
+            <a href="#">Download CV</a>
+            <a href="#">View Projects &rarr;</a>
+          </div>
         </div>
-        <div className="about-image">
+        <div className="about-image d-flex justify-content-center">
           <img
             src={MyPic}
             rel="Profile picture of Merick Icy Agustin"
@@ -28,8 +33,46 @@ function About() {
           />
         </div>
       </div>
-      <div className="experience-container mt-4">
-        <h1>Experience</h1>
+      <div className={classes["experience-container"] + " pb-1"}>
+        <div className="container pt-3">
+          <h1>Experience</h1>
+          <ul className="experiences d-flex flex-column gap-3">
+            <li className="experience d-flex flex-column">
+              <p className="h3">SOFTWARE ENGINEER</p>
+              <p className={classes["company-name"]}>
+                N-PAX Philippines, Inc. (March 2017 – Present)
+              </p>
+              <ul className="d-flex flex-column gap-1">
+                <li>
+                  Participated in the system design, development and
+                  implementation of Loyalty Program for the client
+                </li>
+                <li>Involved as Dev, QA and Technical Implementer</li>
+                <li>
+                  Deployed to the project site for the on-going development
+                  project
+                </li>
+              </ul>
+            </li>
+            <li className="experience d-flex flex-column">
+              <p className="h3">PROGRAMMER</p>
+              <p className={classes["company-name"]}>
+                Geodata Solutions Inc. (February 2014 – March 2017)
+              </p>
+              <ul className="d-flex flex-column gap-1">
+                <li>Web Developer/Fullstack Developer.</li>
+                <li>
+                  Responsible for the development and maintaining Web Based
+                  Systems
+                </li>
+                <li>
+                  Deployed to the project site for the on-going development
+                  project
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
